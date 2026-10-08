@@ -65,9 +65,10 @@ button {
 
 /* phần đầu trang */
 .phan-dau-trang {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* 2 bên rộng bằng nhau -> menu luôn ở giữa */
   align-items: center;
-  gap: 16px;
+  gap: 32px;
   background-color: white;
   padding: 10px 60px;
   font-family: 'Poppins', sans-serif;
@@ -75,7 +76,7 @@ button {
 
 .menu {
   display: flex;
-  gap: 28px;
+  gap: 24px;
 }
 
 .menu a {
@@ -90,10 +91,10 @@ button {
 }
 
 .khu-vuc-phai {
-  margin-left: auto;
+  justify-self: end;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .o-tim-kiem {
@@ -101,7 +102,7 @@ button {
   align-items: center;
   gap: 10px;
   width: 150px;
-  padding: 10px 18px;
+  padding: 8px 14px;
   border: 1px solid #dde3ee;
   border-radius: 30px;
   background-color: #f7f9fc;
@@ -147,13 +148,57 @@ button {
   background-color: #0066cc;
   color: white;
   border: none;
-  padding: 16px 28px;
+  padding: 12px 20px;
   border-radius: 4px;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
+}
+
+/* header trên màn hình nhỏ hơn */
+@media (max-width: 1300px) {
+  .phan-dau-trang {
+    padding: 10px 30px;
+  }
+
+  .menu {
+    gap: 18px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .o-tim-kiem {
+    width: 120px;
+  }
+}
+
+/* không đủ chỗ cho 3 cột: menu xuống dòng thứ 2, vẫn căn giữa */
+@media (max-width: 1100px) {
+  .phan-dau-trang {
+    grid-template-columns: 1fr auto;
+    row-gap: 12px;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* điện thoại: ẩn bớt phần phụ cho vừa màn hình */
+@media (max-width: 700px) {
+  .logo-text p,
+  .o-tim-kiem,
+  .nut-bao-gia {
+    display: none;
+  }
 }
 
 /* phần chân trang */
@@ -326,4 +371,26 @@ button {
   font-size: 14px;
   opacity: 0.8;
   line-height: 1.5;
+}
+
+/* footer trên màn hình nhỏ */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom-links,
+  .payment-methods {
+    flex-wrap: wrap;
+  }
 }
