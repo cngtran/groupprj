@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Thông tin tài khoản</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tai-khoan.css">
+</head>
+
+<body>
+    <header class="phan-dau-trang">
+        <div class="logo-area">
+            <div class="logo-box">HN</div>
+            <div class="logo-text">
+                <h1>HẠNH NGUYỄN</h1>
+                <p>THIẾT BỊ TRƯỜNG HỌC & CÔNG SỞ</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="sanpham.html">Sản Phẩm</a>
+            <a href="#">Giải Pháp</a>
+            <a href="#">Dự án</a>
+            <a href="#">Giới thiệu</a>
+            <a href="lienhe.html">Liên Hệ</a>
+        </nav>
+        <div class="khu-vuc-phai">
+            <div class="o-tim-kiem">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm sản phẩm...">
+            </div>
+            <a href="taikhoan.html" class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="#" class="icon-btn gio-hang">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <button class="nut-bao-gia">NHẬN BÁO GIÁ</button>
+        </div>
+    </header>
+
+    <header class="header">
+        <h3>Trang chủ / Tài khoản</h3>
+        <h1>TÀI KHOẢN ĐƠN VỊ</h1>
+        <h3>Tạo tài khoản để lưu báo giá, theo dõi tiến độ giao hàng và xem lại lịch sử mua sắm của trường.</h3>
+    </header>
+
+    <div class="login">
+
+        <div id="log">
+            <div class="switch">
+                <button type="button" id="dangnhap" class="tab-active">ĐĂNG NHẬP</button>
+                <button type="button" id="dangky">ĐĂNG KÝ</button>
+            </div>
+
+            <div id="form-dangnhap" class="form-content">
+                <div class="field">
+                    <label for="email-dn">Email công tác</label>
+                    <input class="pass" id="email-dn" type="email" placeholder="ketoan@thcs-abc.edu.vn">
+                </div>
+
+                <div class="field">
+                    <label for="mk-dn">Mật khẩu</label>
+                    <input class="pass" id="mk-dn" type="password" placeholder="Nhập mật khẩu của bạn">
+                </div>
+
+                <div class="remember">
+                    <div class="remember-left">
+                        <input type="checkbox" id="checkbox">
+                        <label id="check" for="checkbox">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <a id="forget" href="#">Quên mật khẩu ?</a>
+                </div>
+
+                <button type="button" class="logbut">Đăng nhập</button>
+            </div>
+
+            <div id="form-dangky" class="form-content" hidden>
+                <div class="field">
+                    <label for="ten-dk">Tên đơn vị / Họ và tên</label>
+                    <input class="pass" id="ten-dk" type="text" placeholder="THCS ABC hoặc Nguyễn Văn A">
+                </div>
+
+                <div class="field">
+                    <label for="email-dk">Email công tác</label>
+                    <input class="pass" id="email-dk" type="email" placeholder="ketoan@thcs-abc.edu.vn">
+                </div>
+
+                <div class="field">
+                    <label for="mk-dk">Mật khẩu</label>
+                    <input class="pass" id="mk-dk" type="password" placeholder="Tối thiểu 6 ký tự">
+                </div>
+
+                <button type="button" class="logbut">Tạo tài khoản</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <div>
+                <h3>Có tài khoản để làm gì?</h3>
+            </div>
+            <div>
+                <h6 class="h6">Dành cho trường học, phòng ban và nhà thầu mua sắm thường xuyên.</h6>
+            </div>
+
+            <div class="s1">
+                <div class="square">1</div>
+                <div class="s1content">
+                    <div class="s1text">Lưu và tải lại báo giá</div>
+                    <p class="stext">Giữ nguyên danh mục đã chọn cho kỳ mua sắm sau.</p>
+                </div>
+            </div>
+
+            <div class="s2">
+                <div class="square">2</div>
+                <div class="s2content">
+                    <div class="s1text">Theo dõi giao hàng & lắp đặt</div>
+                    <p class="stext">Biết chính xác ngày xe tới trường và đội lắp đặt phụ trách.</p>
+                </div>
+            </div>
+
+            <div class="s3">
+                <div class="square">3</div>
+                <div class="s3content">
+                    <div class="s1text">Giá dành riêng cho đơn vị</div>
+                    <p class="stext">Chiết khấu theo khối lượng, áp dụng tự động khi đặt hàng.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="sp">
+                <p>Cần hỗ trợ mở tài khoản?</p>
+                <p id="p2">0901 234 567</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-container footer-top">
+        
+        <div class="footer-col">
+            <div class="logo-area">
+                <div class="logo-box">HN</div>
+                <div class="logo-text">
+                    <h1>HẠNH NGUYỄN</h1>
+                </div>
+            </div>
+            <p class="footer-desc">
+                Đơn vị cung cấp bàn ghế, máy tính, camera, thiết bị âm thanh và vật tư điện cho trường học, nhà văn hóa và cơ quan trên toàn quốc. Giá tận xưởng, giao lắp tận nơi, bảo hành dài hạn.
+            </p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Zalo">Zalo</a>
+                <a href="#" title="YouTube">▶</a>
+                <a href="#" title="TikTok">♪</a>
+            </div>
+        </div>
+
+       
+        <div class="footer-col">
+            <h3>SẢN PHẨM</h3>
+            <ul class="footer-links">
+                <li><a href="#">Bàn ghế trường học</a></li>
+                <li><a href="#">Máy tính & thiết bị CNTT</a></li>
+                <li><a href="#">Camera giám sát</a></li>
+                <li><a href="#">Âm thanh & loa</a></li>
+                <li><a href="#">Dây điện & vật tư điện</a></li>
+            </ul>
+        </div>
+
+       
+        <div class="footer-col">
+            <h3>CÔNG TY</h3>
+            <ul class="footer-links">
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Giải pháp trọn gói</a></li>
+                <li><a href="#">Dự án đã thực hiện</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer-col">
+            <h3>LIÊN HỆ</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@hanhnguyen.vn">info@hanhnguyen.vn</a></li>
+                <li><a href="tel:+842438000000">+84 (0) 24 3800 0000</a></li>
+                <li>Lô C7, KCN Thạch Thất<br>Hà Nội, Việt Nam</li>
+                <li>Thứ 2 – Thứ 6, 8:00 – 17:30</li>
+            </ul>
+        </div>
+    </div>
+
+   
+    <div class="footer-bottom">
+        <div class="footer-container">
+            <p>© 2026 Công ty Hạnh Nguyễn. Bảo lưu mọi quyền.</p>
+            
+            <div class="footer-bottom-links">
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Điều khoản dịch vụ</a>
+                <a href="#">Cài đặt cookie</a>
+            </div>
+
+            <div class="payment-methods">
+                <span>CHUYỂN KHOẢN</span>
+                <span>VNPAY</span>
+                <span>MOMO</span>
+                <span>VISA</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/taikhoan.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* =========================================================
+   STYLE RIÊNG CHO TRANG TÀI KHOẢN (taikhoan.html)
+   Phần dùng chung (reset, đầu trang, chân trang) nằm ở style.css
+   ========================================================= */
+
+/* đẩy footer xuống đáy khi nội dung ngắn */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* banner tiêu đề */
+.header {
+    background-color: #0f2c52;
+    padding: 40px;
+    color: white;
+    line-height: 50px;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header h3 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* khung đăng nhập / đăng ký */
+.login {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 19px;
+}
+
+#log {
+    flex: 1 1 400px;
+    max-width: 480px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.switch {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.switch button {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    background-color: white;
+    color: #888888;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.switch button.tab-active {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.form-content[hidden] {
+    display: none !important;
+}
+
+.field {
+    width: 100%;
+    max-width: 400px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+}
+
+.pass {
+    width: 100%;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.pass:focus {
+    border-color: #0066cc;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.remember-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#check {
+    font-size: 13px;
+}
+
+#forget {
+    font-size: 13px;
+    color: #0066cc;
+}
+
+.logbut {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    margin-top: 6px;
+    border: none;
+    background-color: #0066cc;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logbut:hover {
+    background-color: #0f2c52;
+}
+
+/* khung "Có tài khoản để làm gì?" */
+.info {
+    flex: 1 1 320px;
+    max-width: 420px;
+    background-color: #0f2c52;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.h6 {
+    color: #ddd;
+}
+
+.s1, .s2, .s3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.square {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: orange;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.s1text {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stext {
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 4px;
+}
+
+.info hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#p2 {
+    font-weight: bold;
+    color: coral;
+}

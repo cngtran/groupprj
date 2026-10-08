@@ -1,0 +1,329 @@
+/* =========================================================
+   STYLE CHUNG CHO TOÀN BỘ TRANG
+   (reset, đầu trang, chân trang)
+   ========================================================= */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* logo (dùng ở cả đầu trang và chân trang) */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-box {
+  background-color: #0066cc;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a2a5e;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.logo-text p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #5a5858;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* phần đầu trang */
+.phan-dau-trang {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: white;
+  padding: 10px 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+}
+
+.menu a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  color: #0066cc;
+}
+
+.khu-vuc-phai {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.o-tim-kiem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  padding: 10px 18px;
+  border: 1px solid #dde3ee;
+  border-radius: 30px;
+  background-color: #f7f9fc;
+  color: #0066cc;
+}
+
+.o-tim-kiem input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+}
+
+.icon-btn {
+  color: #1a1a1a;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.gio-hang {
+  position: relative;
+}
+
+.so-luong {
+  position: absolute;
+  top: -10px;
+  right: -14px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nut-bao-gia {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* phần chân trang */
+.footer {
+  background-color: #1a1a1a;
+  border-top: 3px solid #0066cc;
+  color: #ffffff;
+  padding-top: 50px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col .logo-area {
+  margin-bottom: 16px;
+}
+
+.footer-col .logo-text h1 {
+  color: #ffffff;
+}
+
+.footer-col .logo-text p {
+  color: #b0b8c4;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-desc {
+  color: #b0b8c4;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+  color: #b0b8c4;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-links a {
+  color: #b0b8c4;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #333333;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+  background-color: #0066cc;
+}
+
+.footer-bottom {
+  background-color: #111111;
+  padding: 20px 0;
+  font-size: 12px;
+  border-top: 1px solid #333333;
+}
+
+.footer-bottom .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  color: #b0b8c4;
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: #b0b8c4;
+  transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover {
+  color: #ffffff;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 15px;
+}
+
+.payment-methods span {
+  color: #b0b8c4;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* banner tiêu đề đầu trang con (vd. trang Sản phẩm) */
+.page-hero {
+  background-color: #0f2c52;
+  color: #ffffff;
+  padding: 45px 60px;
+}
+
+.hero-head {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.hero-head a {
+  color: #ffffff;
+}
+
+.hero-head span {
+  margin: 0 5px;
+}
+
+.page-hero h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 12px 0 14px;
+}
+
+.page-hero p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.5;
+}

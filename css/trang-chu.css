@@ -1,0 +1,351 @@
+/* =========================================================
+   STYLE RIÊNG CHO TRANG CHỦ (index.html)
+   Phần dùng chung (reset, đầu trang, chân trang) nằm ở style.css
+   Màu và kiểu card/nút theo cùng phong cách trang Liên hệ, Tài khoản
+   ========================================================= */
+
+/* ---------- nút ---------- */
+.nhom-nut {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nut {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nut-chinh {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+.nut-chinh:hover {
+    background-color: #0052a3;
+}
+
+/* viền cam, dùng trên nền tối */
+.nut-vien {
+    border: 2px solid #ff9800;
+    color: #ff9800;
+}
+
+.nut-vien:hover {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+/* viền xanh, dùng trên nền trắng */
+.nut-vien-xanh {
+    border: 2px solid #0066cc;
+    color: #0066cc;
+}
+
+.nut-vien-xanh:hover {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+.nut-cam {
+    background-color: #ff9800;
+    color: #ffffff;
+    padding: 16px 36px;
+    font-size: 16px;
+}
+
+.nut-cam:hover {
+    background-color: #e68a00;
+}
+
+/* ---------- phần thứ hai: banner ---------- */
+.banner {
+    background-color: #0f2c52;
+    color: #ffffff;
+}
+
+.noi-dung-chinh {
+    padding: 80px 60px;
+}
+
+/* nhãn cam */
+.gioi-thieu {
+    display: inline-block;
+    background-color: #ff9800;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-bottom: 32px;
+}
+
+/* thanh số liệu */
+.phan-tong-quat {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a1f3b;
+    padding: 25px 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.so-lieu {
+    display: flex;
+    flex-direction: column;
+}
+
+.so-lieu strong {
+    font-size: 32px;
+    color: #ff9800;
+}
+
+.so-lieu span {
+    font-size: 14px;
+    color: #b0b8c4;
+}
+
+/* ---------- khung chung cho các phần nội dung ---------- */
+.khu-vuc {
+    padding: 60px;
+    background-color: #ffffff;
+}
+
+.khu-vuc-xam {
+    background-color: #f5f5f5;
+}
+
+.tieu-de {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f2c52;
+    margin-bottom: 8px;
+}
+
+.phu-de {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.luoi-danh-muc {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.luoi-ba-cot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.luoi-bon-cot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* card trắng, giống form/sidebar trang Liên hệ */
+.the {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.khung-anh {
+    height: 160px;
+    background-color: #eef2f5;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    font-size: 12px;
+    color: #888888;
+}
+
+.noi-dung-the {
+    padding: 20px;
+}
+
+.noi-dung-the h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f2c52;
+    margin-bottom: 10px;
+}
+
+/* ---------- phần thứ ba: danh mục ---------- */
+.lien-ket {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.lien-ket:hover {
+    color: #0f2c52;
+}
+
+.lien-ket i {
+    font-size: 11px;
+    margin-left: 4px;
+}
+
+/* ---------- phần thứ tư: giải pháp trọn gói ---------- */
+.the-goi {
+    border: 1px solid #e5e7eb;
+    box-shadow: none;
+}
+
+.the-goi .khung-anh {
+    height: 180px;
+}
+
+.the-goi .noi-dung-the h3 {
+    font-size: 18px;
+}
+
+.mo-ta-the {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 16px;
+}
+
+.danh-sach {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.danh-sach li {
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.danh-sach li::before {
+    content: "✓";
+    color: #0066cc;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.gia {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.gia strong {
+    font-size: 22px;
+    color: #0066cc;
+}
+
+.the-goi .nhom-nut .nut {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 13px;
+}
+
+/* ---------- phần thứ năm: vì sao chọn ---------- */
+.the-ly-do {
+    padding: 30px;
+}
+
+.so-thu-tu {
+    width: 32px;
+    height: 32px;
+    background-color: #ff9800;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.the-ly-do h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f2c52;
+    margin-bottom: 8px;
+}
+
+.the-ly-do p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* ---------- phần thứ sáu: kêu gọi tư vấn ---------- */
+.keu-goi {
+    background-color: #0f2c52;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px;
+}
+
+.keu-goi h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.keu-goi p {
+    font-size: 15px;
+    color: #b0b8c4;
+    margin-bottom: 28px;
+}
+
+/* ---------- màn hình nhỏ ---------- */
+@media (max-width: 1100px) {
+    .luoi-danh-muc {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .luoi-bon-cot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .noi-dung-chinh,
+    .khu-vuc,
+    .keu-goi {
+        padding: 40px 20px;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .phan-tong-quat {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .luoi-danh-muc,
+    .luoi-ba-cot,
+    .luoi-bon-cot {
+        grid-template-columns: 1fr;
+    }
+}
